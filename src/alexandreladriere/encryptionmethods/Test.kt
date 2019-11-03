@@ -1,6 +1,6 @@
 package alexandreladriere.encryptionmethods
 
-import alexandreladriere.encryptionmethods.vigenere.Vigenere
+import alexandreladriere.encryptionmethods.algorithms.Vigenere
 
 fun main() {
     val txtDecrypted = "Toutes les grandes personnes ont d'abord été des enfants, mais peu d'entre elles s'en souviennent."

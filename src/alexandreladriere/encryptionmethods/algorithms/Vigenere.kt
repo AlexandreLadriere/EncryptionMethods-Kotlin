@@ -1,5 +1,6 @@
-package alexandreladriere.encryptionmethods.vigenere
+package alexandreladriere.encryptionmethods.algorithms
 
+import alexandreladriere.encryptionmethods.utils.VIGENERE_ARRAY
 import alexandreladriere.encryptionmethods.utils.flattenToAscii
 
 class Vigenere(var txt: String, var key: String) {

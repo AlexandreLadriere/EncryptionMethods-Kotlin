@@ -6,7 +6,7 @@ import java.text.Normalizer
  * This function get rid of all accents and special letters (e.g.: é will became e). See https://stackoverflow.com/a/15191508
  * @param txt Text to be flattened
  */
-fun flattenToAscii(txt: String): String {
+internal fun flattenToAscii(txt: String): String {
     var string = txt
     val out = CharArray(string.length)
     string = Normalizer.normalize(string, Normalizer.Form.NFD)
