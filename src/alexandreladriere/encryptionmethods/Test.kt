@@ -1,7 +1,6 @@
 package alexandreladriere.encryptionmethods
 
-import alexandreladriere.encryptionmethods.vigenere.decodeMessage_Vigenere
-import alexandreladriere.encryptionmethods.vigenere.encodeMessage_Vigenere
+import alexandreladriere.encryptionmethods.vigenere.Vigenere
 
 fun main() {
     val txtDecrypted = "Toutes les grandes personnes ont d'abord été des enfants, mais peu d'entre elles s'en souviennent."
@@ -11,6 +10,8 @@ fun main() {
     println("Text to be decrypted: $txtEncrypted")
     println("Encryption key: $key")
     println("\n********** Vigenere cipher **********")
-    println("Encrypted text: " + encodeMessage_Vigenere(txtDecrypted, key))
-    println("Decrypted text: " + decodeMessage_Vigenere(txtEncrypted, key))
+    val vigenereTest = Vigenere(txtDecrypted, key)
+    println("Encrypted text: " + vigenereTest.encodeMessage())
+    vigenereTest.txt = txtEncrypted
+    println("Decrypted text: " + vigenereTest.decodeMessage())
 }
