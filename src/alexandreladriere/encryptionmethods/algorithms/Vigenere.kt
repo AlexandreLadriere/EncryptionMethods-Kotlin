@@ -3,6 +3,9 @@ package alexandreladriere.encryptionmethods.algorithms
 import alexandreladriere.encryptionmethods.utils.VIGENERE_ARRAY
 import alexandreladriere.encryptionmethods.utils.flattenToAscii
 
+/**
+ * Class used to encode and decode texts by using Vigenere cypher
+ */
 class Vigenere(var txt: String, var key: String) {
 
     /**
