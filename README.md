@@ -21,3 +21,5 @@ Just a few guidelines:
 
 ### Issues
 If you find any bugs/issues, raise an issue.
+
+  [LICENSE]: <LICENSE>
